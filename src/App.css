@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.center-text {
+  text-align: center;
+}
+
+.center-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.greyOut {
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(230, 199, 255);
+}
+
+.letsKeepScore {
+  text-align: center;
+  background-color: rgb(230, 199, 255);
+  color: rgb(47, 0, 94);
+}
