@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <p class="greyOut">- © Richard Walter, Eric Sorrels, and Richard Lindenfelzer -</p>
+        <p class="greyOut">- © GameKnight -</p>
     )
 }
 
