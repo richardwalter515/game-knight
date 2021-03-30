@@ -15,9 +15,9 @@ function Navigation() {
                 alt="React Bootstrap logo"
             />GameKnight</Navbar.Brand>
             <Nav className="mr-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Features</Nav.Link>
-            <Nav.Link href="#">Pricing</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Scoreboard">Scoreboard</Nav.Link>
+            <Nav.Link href="/Dice">Dice</Nav.Link>
             </Nav>
             <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

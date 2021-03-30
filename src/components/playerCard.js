@@ -15,12 +15,11 @@ function PlayerCard(props) {
 
     return(
         <div>
-            <Card style={{ width: '18rem' }} key={props.index}>
+            <Card key={props.index} className="playerCard">
                 <Card.Body>
-                    <Card.Title>{props.name}</Card.Title>
-                    <Card.Text>My Score: {score}</Card.Text>
+                    <Card.Title className="playerCardName">{props.name}</Card.Title>
+                    <Card.Text><strong>My Score: {score}</strong></Card.Text>
                     <form onSubmit={handleSubmit(addScores)}>
-                        <label>Names of Players or Teams</label>
                         <input type="text" name="points" placeholder="add points" ref={register} />
                         <button>Click to add points</button>
                     </form>

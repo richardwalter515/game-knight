@@ -60,3 +60,22 @@
   background-color: rgb(230, 199, 255);
   color: rgb(47, 0, 94);
 }
+
+.playerCard {
+  background-color: rgb(230, 199, 255) !important;
+  border: rgb(47, 0, 94) !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  width: 18rem;
+  justify-content: center;
+  margin: auto;
+  float: left;
+}
+
+.playerCardName {
+  color: rgb(47, 0, 109);
+  border: blueviolet;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 36px !important;
+}
