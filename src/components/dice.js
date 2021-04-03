@@ -3,10 +3,7 @@ import {useState} from 'react';
 import DiceCard from "./diceCard";
 
 function Dice() {
-    const [diceOne, setDiceOne] = useState();
-    const [diceTwo, setDiceTwo] = useState();
     const [diceToRoll, setDiceToRoll] = useState(0);
-
 
     const handleChange = (event) => {
         setDiceToRoll(parseInt(event.target.value));
@@ -19,7 +16,7 @@ function Dice() {
                 <h1 className='letsKeepScore'>Let's Roll The Dice</h1>
                 <form>
                     <label>
-                        How many would you like to roll?
+                        How many would you like to roll? <br></br>
                         <select value={diceToRoll} onChange={handleChange}>
                             <option value="null">Select</option>
                             <option value="1">1</option>
@@ -37,7 +34,9 @@ function Dice() {
         return (
             <div>
                 <h1 className='letsKeepScore'>Let's Roll The Dice</h1>
-                {Array(diceToRoll).fill(<DiceCard />)}
+                <div className='center'>
+                    {Array(diceToRoll).fill(<DiceCard />)}
+                </div>
                 <p class="greyOut">- © GameKnight -</p>
             </div>
         )

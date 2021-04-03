@@ -7,9 +7,11 @@ import four from '../assets/dice/dice-four.png';
 import five from '../assets/dice/dice-five.png';
 import six from '../assets/dice/dice-six.png';
 
-function DiceCard(props) {
+function DiceCard() {
     const [diceNumber, setDiceNumber] = useState();
     const [diceImage, setDiceImage] = useState();
+
+    const imageArr = [one, two, three, four, five, six];
 
     const getRandomNumber = (min, max) => {
         min = Math.ceil(min);
@@ -17,36 +19,18 @@ function DiceCard(props) {
         return Math.floor(Math.random() * (max-min+1) + min);
     }
 
-    const setImage = () => {
-        if (diceNumber === 1) {
-            setDiceImage(one)
-        } else if (diceNumber === 2){
-            setDiceImage(two)
-        } else if (diceNumber === 3){
-            setDiceImage(three)
-        } else if (diceNumber === 4){
-            setDiceImage(four)
-        } else if (diceNumber === 5){
-            setDiceImage(five)
-        } else if (diceNumber === 6){
-            setDiceImage(six)
-        }
-    }
-
     const diceRoll = () => {
         let randomNumber = getRandomNumber(1, 6);
         setDiceNumber(randomNumber);
-        setImage();
+        setDiceImage(imageArr[randomNumber-1]);
     }
-
+    
     return (
-        <div>
-            <h3>This dice has a value of {diceNumber}</h3>
+        <div className="diceCard">
             <img src={diceImage}></img>
             <button onClick={diceRoll}>Roll</button>
         </div>
     )
-
 };
 
 export default DiceCard;

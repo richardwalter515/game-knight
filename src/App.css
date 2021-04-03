@@ -79,3 +79,17 @@
   border-width: 2px;
   font-size: 36px !important;
 }
+
+.diceCard {
+  display: inline-block;
+  padding: 20px;
+  border: rgb(47, 0, 109);
+  border-style: groove;
+  border-width: 2px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  display: inline-block;
+}
