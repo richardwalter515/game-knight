@@ -88,6 +88,19 @@
   border-width: 2px;
 }
 
+@keyframes dice-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-dice {
+  animation: dice-spin 2s;
+}
+
 .center {
   margin: auto;
   width: 50%;
